@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.scss'
-import App from './App'
+import { renderRoutes } from 'react-router-config'
+import { HashRouter } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals'
+import routes from './routes'
 
 ReactDOM.render(
-  <App />,
+  <HashRouter>{renderRoutes(routes)}</HashRouter>,
   document.getElementById('root')
 )
 

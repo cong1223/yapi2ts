@@ -1,0 +1,26 @@
+.textAreaInput {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.btnGroups {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  .btn {
+    margin-right: 16px;
+    color: #fff;
+    background-color: #2ecc71;
+    border-color: #29b765;
+    font-size: 14px;
+    padding: 6px 12px;
+    line-height: 34px;
+    box-sizing: border-box;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+}

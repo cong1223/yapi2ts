@@ -1,4 +1,4 @@
-.navBar {
+.header {
   font-size: 2em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
@@ -16,7 +16,20 @@
     text-decoration: none;
     text-align: center;
     line-height: 1.5;
-    background-image: -webkit-linear-gradient(left,#3498db,#f47920 10%,#d71345 20%,#f7acbc 30%,#ffd400 40%,#3498db 50%,#f47920 60%,#d71345 70%,#f7acbc 80%,#ffd400 90%,#3498db);
+    background-image: -webkit-linear-gradient(
+      left,
+      #3498db,
+      #f47920 10%,
+      #d71345 20%,
+      #f7acbc 30%,
+      #ffd400 40%,
+      #3498db 50%,
+      #f47920 60%,
+      #d71345 70%,
+      #f7acbc 80%,
+      #ffd400 90%,
+      #3498db
+    );
     color: transparent;
     background-size: 200% 100%;
     animation: slide 5s infinite linear;
@@ -42,49 +55,12 @@
       line-height: 50px;
       cursor: pointer;
       &:hover {
-        background-color: #3E78AC;
+        background-color: #3e78ac;
       }
     }
   }
 }
-.content {
-  .wrap {
-    width: 960px;
-    margin: 0 auto;
-    padding: 35px 0;
-    .textAreaInput {
-      padding: 6px 12px;
-      border: 1px solid #ccc;
-      width: 100%;
-      margin-bottom: 10px;
-    }
-    .btnGroups {
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 50px;
-      .btn {
-        margin-right: 16px;
-        color: #fff;
-        background-color: #2ecc71;
-        border-color: #29b765;
-        font-size: 14px;
-        padding: 6px 12px;
-        line-height: 34px;
-        box-sizing: border-box;
-        height: 34px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 4px;
-      }
-    }
-    .divider {
-      margin: 20px 0;
-      width: 100%;
-      border-top: 1px solid #eee;
-    }
-  }
-}
+
 @keyframes slide {
   0% {
     background-position: 0 0;

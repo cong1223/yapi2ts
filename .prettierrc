@@ -4,12 +4,13 @@
   "jsxBracketSameLine": false,
   "arrowParens": "always",
   "singleQuote": true,
-  "printWidth": 120,
+  "printWidth": 80,
   "trailingComma": "none",
   "tabWidth": 2,
   "useTabs": false,
   "quoteProps": "as-needed",
   "bracketSpacing": true,
   "endOfLine": "lf",
-  "embeddedLanguageFormatting": "auto"
+  "embeddedLanguageFormatting": "auto",
+  "htmlWhitespaceSensitivity": "ignore"
 }
