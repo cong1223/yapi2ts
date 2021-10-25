@@ -5,8 +5,10 @@ interface LoginYapiParams {
   password: string
 }
 
-export default {
+const authApi = {
   login<T>(params: LoginYapiParams) {
-    return Ajax.post<T, LoginYapiParams>('/api/user/login', params)
+    return Ajax.post<T, LoginYapiParams>('/login', params)
   }
 }
+
+export default authApi

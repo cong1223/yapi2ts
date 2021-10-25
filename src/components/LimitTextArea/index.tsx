@@ -34,6 +34,7 @@ const LimitedTextarea: FC<Props> = (props) => {
 
   useEffect(() => {
     setFormattedContent(content)
+    // eslint-disable-next-line
   }, [])
 
   return (

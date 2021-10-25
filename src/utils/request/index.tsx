@@ -1,7 +1,7 @@
 import Axios, { AxiosInstance, AxiosRequestConfig } from 'axios'
 
 // 接口前缀
-const BASE_URL = 'http://api.hljnbw.cn/'
+const BASE_URL = 'http://localhost:3333/'
 
 // axios 配置实例
 const getAxiosInstance = (): AxiosInstance => {
@@ -12,8 +12,7 @@ const getAxiosInstance = (): AxiosInstance => {
     ...config,
     params: {
       // `params`应该是个对象，不能是其他数据类型
-      ...(config.params || {}),
-      _: +new Date()
+      ...(config.params || {})
     }
   }))
 
@@ -88,6 +87,7 @@ const GetAxios = () => {
     return new Promise((resolve, reject) => {
       instance.request<BaseResponse<T>>(config).then((data) => {
         const __data = data.data
+        console.log('=======', data)
         if (__data.success) {
           resolve(__data)
         } else {
