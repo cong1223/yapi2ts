@@ -14,10 +14,9 @@ class Store {
 
   handleLogin = async () => {
     const res = await authApi.login<any>({
-      email: 'ye_xiu@hunliji.com',
-      password: 'qq962464'
+      email: '',
+      password: ''
     })
-    console.log('===登录结果=====', res)
   }
 }
 

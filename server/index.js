@@ -5,7 +5,7 @@ const MD = require('./midllewares')
 const config = require('./config')
 const utils = require('./utils')
 
-const port = '3330'
+const port = '3333'
 const host = '0.0.0.0'
 
 app.context.config = config
