@@ -1,17 +1,24 @@
 import { FC } from 'react'
-import styles from '@/layout/ContentWrapper/index.module.scss'
+import styles from './index.module.scss'
+import Store from './Store'
+import { observer, useLocalObservable } from 'mobx-react'
+import LimitedTextarea from '@/components/LimitTextArea'
 
 const Home: FC = () => {
+  const store = useLocalObservable(() => new Store())
+
   return (
     <>
-      <textarea
+      <LimitedTextarea
         className={styles.textAreaInput}
-        name="inputCode"
         rows={12}
         placeholder="enter link"
+        value={store.inputValue}
+        showLimitText={false}
+        onChange={store.onChangeInputValue}
       />
       <div className={styles.btnGroups}>
-        <button className={styles.btn} onClick={() => void 0}>
+        <button className={styles.btn} onClick={store.generateEntity}>
           确认
         </button>
       </div>
@@ -19,4 +26,4 @@ const Home: FC = () => {
   )
 }
 
-export default Home
+export default observer(Home)

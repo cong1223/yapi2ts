@@ -1,10 +1,10 @@
 import NavHeader from './NavHeader'
-import styles from '@/layout/ContentWrapper/index.module.scss'
+import styles from './index.module.scss'
 import { renderRoutes, RouteConfigComponentProps } from 'react-router-config'
 import { FC } from 'react'
+import LoginModal from '@/components/LoginModal'
 
 const Layout: FC<RouteConfigComponentProps> = (props) => {
-
   const { route } = props
 
   return (
@@ -16,6 +16,7 @@ const Layout: FC<RouteConfigComponentProps> = (props) => {
           <hr className={styles.divider} />
         </div>
       </div>
+      <LoginModal />
     </div>
   )
 }
